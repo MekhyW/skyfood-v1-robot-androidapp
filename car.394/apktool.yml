@@ -1,0 +1,23 @@
+version: 2.12.1
+apkFileName: car.394.apk
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: 27
+  targetSdkVersion: 27
+packageInfo:
+  forcedPackageId: 127
+versionInfo:
+  versionCode: 176
+  versionName: 1.7.6
+doNotCompress:
+- arsc
+- gif
+- jpg
+- mp3
+- mp4
+- png
+- so
+- webp
+- okhttp3/internal/publicsuffix/publicsuffixes.gz

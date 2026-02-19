@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="width=device-width,user-scalable=no" name="viewport" charset="utf-8">
+<!--    <script "text/javascript" src="./locale.js"></script>    -->
+    <title id="title"></title>
+    <script type="text/javascript">
+        const Config={
+//1 中文,2 英文,3 中文繁体,4 日语,5 韩语,6 德语,7 泰语,8 西班牙语
+"1":{
+  'title':'carpad-文件发送',
+  'file_name':'名称',
+  'file_size':'大小',
+  'file_progress':'进度',
+  'file_progress_error':'无法计算',
+  'file_large_tip':'文件过大请先进行压缩',
+  'file_error_tip':'解析文件失败',
+  'file_type_tip':'请选择mp4,gif格式的文件',
+  'file_send_failed':'发送失败，请重试',
+  'file_send_cancel':'发送已取消',
+  'file_choose_tip':'请选择文件',
+  'file_choose_content':'请选择1280*800分辨率以下的mp4,gif格式文件，视频文件大小最好控制在1mb以下，图片文件控制在1mb以下，上传前建议压缩和图片视频到推荐大小',
+  'btn_choose_file':'选择文件',
+  "btn_send":" 发送 "
+},
+"2":{
+"title": "carpad-File Sending",
+"file_name": "Name",
+"file_size": "Size",
+"file_progress": "Progress",
+"file_progress_error": "Unable to calculate",
+"file_large_tip": "File is too large, please compress it first",
+'file_error_tip':'Failed to parse the file',
+"file_type_tip": "Please select files in mp4, gif formats",
+"file_send_failed": "Failed to send, please try again",
+"file_send_cancel": "Send canceled",
+"file_choose_tip": "Please choose a file",
+"file_choose_content": "Please select mp4, gif format files with a resolution of 1280*800 or below. It is recommended to compress and resize the files to the recommended size before uploading. Video files should ideally be kept under 1MB, and image files under 1MB.",
+"btn_choose_file": "Choose File",
+"btn_send": "Send"
+},
+"3":{
+'title':'carpad-文件發送',
+  'file_name':'名稱',
+  'file_size':'大小',
+  'file_progress':'進度',
+  'file_progress_error':'無法計算',
+  'file_large_tip':'文件過大請先進行壓縮',
+  'file_error_tip':'解析文件失敗',
+  'file_type_tip':'請選擇mp4,gif格式的文件',
+  'file_send_failed':'發送失敗，請重試',
+  'file_send_cancel':'發送已取消',
+  'file_choose_tip':'請選擇文件',
+  'file_choose_content':'請選擇1280*800分辨率以下的mp4,gif格式文件，視頻文件大小最好控製在1mb以下，圖片文件控製在1mb以下，上傳前建議壓縮和圖片視頻到推薦大小',
+  'btn_choose_file':'選擇文件',
+  "btn_send":" 發送 "
+},
+"4":{
+"title": "carpad-ファイル送信",
+"file_name": "名称",
+"file_size": "サイズ",
+"file_progress": "進捗",
+"file_progress_error": "計算できません",
+"file_large_tip": "ファイルが大きすぎます。圧縮してください",
+'file_error_tip':'ファイルの解析に失敗しました',
+"file_type_tip": "mp4、gif形式のファイルを選択してください",
+"file_send_failed": "送信に失敗しました。もう一度お試しください",
+"file_send_cancel": "送信がキャンセルされました",
+"file_choose_tip": "ファイルを選択してください",
+"file_choose_content": "1280*800以下の解像度のmp4、gif形式のファイルを選択してください。アップロードする前にファイルを圧縮し、推奨サイズにリサイズすることをおすすめします。ビデオファイルは1MB以下、画像ファイルは1MB以下にしてください。",
+"btn_choose_file": "ファイルを選択",
+"btn_send": "送信"
+},
+"5":{
+"title": "carpad-파일 전송",
+"file_name": "이름",
+"file_size": "크기",
+"file_progress": "진행",
+"file_progress_error": "계산할 수 없음",
+"file_large_tip": "파일이 너무 큽니다. 먼저 압축하세요",
+'file_error_tip':'파일 분석에 실패했습니다',
+"file_type_tip": "mp4, gif 형식의 파일을 선택하세요",
+"file_send_failed": "전송 실패. 다시 시도하세요",
+"file_send_cancel": "전송 취소됨",
+"file_choose_tip": "파일을 선택하세요",
+"file_choose_content": "1280*800 이하의 해상도를 가진 mp4,gif 형식의 파일을 선택하세요. 업로드 전에 파일을 압축하고 권장 크기로 조정하는 것이 좋습니다. 비디오 파일은 1MB 이하, 이미지 파일은 1MB 이하로 유지해주세요.",
+"btn_choose_file": "파일 선택",
+"btn_send": "전송"
+},
+"6":{
+"title": "carpad-Datei senden",
+"file_name": "Name",
+"file_size": "Größe",
+"file_progress": "Fortschritt",
+"file_progress_error": "Berechnung nicht möglich",
+"file_large_tip": "Datei ist zu groß, bitte zuerst komprimieren",
+'file_error_tip':'Fehler beim Analysieren der Datei',
+"file_type_tip": "Bitte wählen Sie Dateien in den Formaten  mp4, gif",
+"file_send_failed": "Senden fehlgeschlagen, bitte erneut versuchen",
+"file_send_cancel": "Senden abgebrochen",
+"file_choose_tip": "Bitte wählen Sie eine Datei aus",
+"file_choose_content": "Bitte wählen Sie mp4, gif Formatdateien mit einer Auflösung von 1280*800 oder darunter aus. Es wird empfohlen, die Dateien vor dem Hochladen zu komprimieren und auf die empfohlene Größe zu ändern. Videodateien sollten idealerweise unter 1 MB und Bilddateien unter 1 MB bleiben.",
+"btn_choose_file": "Datei auswählen",
+"btn_send": "Senden"
+},
+"7":{
+"title": "carpad-ส่งไฟล์",
+"file_name": "ชื่อ",
+"file_size": "ขนาด",
+"file_progress": "ความคืบหน้า",
+"file_progress_error": "ไม่สามารถคำนวณได้",
+"file_large_tip": "ไฟล์ใหญ่เกินไป โปรดบีบอัดก่อน",
+'file_error_tip':'ไม่สามารถแยกวิเคราะห์ไฟล์ได้',
+"file_type_tip": "โปรดเลือกไฟล์ในรูปแบบ  mp4, gif",
+"file_send_failed": "ส่งไม่สำเร็จ โปรดลองอีกครั้ง",
+"file_send_cancel": "ยกเลิกการส่งแล้ว",
+"file_choose_tip": "โปรดเลือกไฟล์",
+"file_choose_content": "โปรดเลือกไฟล์ในรูปแบบ mp4, gif, wav ที่มีความละเอียด 1280*800 หรือต่ำกว่า แนะนำให้บีบอัดและปรับขนาดไฟล์ให้เหมาะสมก่อนอัปโหลด ไฟล์วิดีโอควรมีขนาดไม่เกิน 1MB และไฟล์รูปภาพควรมีขนาดไม่เกิน 1MB",
+"btn_choose_file": "เลือกไฟล์",
+"btn_send": "ส่ง"
+},
+"8":{
+"title": "carpad-Envío de archivos",
+"file_name": "Nombre",
+"file_size": "Tamaño",
+"file_progress": "Progreso",
+"file_progress_error": "No se puede calcular",
+"file_large_tip": "El archivo es demasiado grande, por favor comprímalo primero",
+'file_error_tip':'Error al analizar el archivo',
+"file_type_tip": "Por favor, seleccione archivos en formato mp4, gif",
+"file_send_failed": "Envío fallido, por favor inténtelo de nuevo",
+"file_send_cancel": "Envío cancelado",
+"file_choose_tip": "Por favor, elija un archivo",
+"file_choose_content": "Por favor, seleccione archivos en formato mp4, gif, wav con una resolución de 1280*800 o inferior. Se recomienda comprimir y redimensionar los archivos al tamaño recomendado antes de subirlos. Los archivos de video deben mantenerse idealmente por debajo de los 1 MB, y los archivos de imagen por debajo de 1 MB.",
+"btn_choose_file": "Seleccionar archivo",
+"btn_send": "Enviar"
+}
+}
+
+      
+      window.onload=function(){
+        window.language = '{languageType}';
+        document.getElementById('title').innerHTML = getValue('title');
+        document.getElementById('file_choose_tip').innerHTML = getValue('file_choose_content');
+        document.getElementById('choose_file').value = getValue('btn_choose_file');
+        document.getElementById('submitBtn').value = getValue('btn_send');
+      }
+
+      function getValue(key){
+        var content =  Config[window.language][key]
+        console.log(window.language+'|'+key+'|'+content)
+        return content
+      }
+
+      function GetQueryString(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if(r != null) return decodeURI(r[2]);
+        return null;
+      }
+
+      function getFileType(fileName){
+        var fileExtension = fileName.split('.').pop().toLowerCase();
+        if(fileExtension == 'mp4'){
+          return 1;
+        }
+        if(fileExtension == 'gif'){
+          return 2;
+        }
+        return 4;
+      }
+
+      function showFileBigTip(){
+        document.getElementById('errorType').innerHTML = getValue('file_large_tip');
+        document.getElementById('submitBtn').disabled = true;  
+      }
+
+      function showFileErrorTip(){
+        document.getElementById('errorType').innerHTML = getValue('file_error_tip');
+        document.getElementById('submitBtn').disabled = true;
+      }
+
+      function beginUploadFile(file) {
+        document.getElementById('errorType').innerHTML = '';
+          document.getElementById('submitBtn').disabled = false;
+
+          var fileSize = 0;
+          if (file.size > 1024 * 1024)
+            fileSize = (Math.round(file.size * 100 / (1024 * 1024)) / 100).toString() + 'MB';
+          else
+            fileSize = (Math.round(file.size * 100 / 1024) / 100).toString() + 'KB';
+          document.getElementById('fileName').innerHTML = getValue('file_name') + ': ' + file.name;
+          document.getElementById('fileSize').innerHTML = getValue('file_size') + ': ' + fileSize;
+          document.getElementById('progressNumber').innerHTML = getValue('file_progress') + ': -';
+      }
+
+      function fileSelected() {
+        var file = document.getElementById('fileToUpload').files[0];
+        console.log(file)
+        if (file) {
+          var fileType = getFileType(file.name)
+          if(fileType == 4){
+            document.getElementById('errorType').innerHTML = getValue('file_type_tip');
+            document.getElementById('submitBtn').disabled = true;
+            return;
+          }
+          if(file.size >  1024 * 1024){
+            showFileBigTip();
+            return;
+          }
+
+          if(fileType == 1){
+              // 获取上传的视频的宽高
+              var videoUrl = URL.createObjectURL(file);
+              var videoObj = document.createElement("video");
+              videoObj.onloadedmetadata = function (evt) {
+                URL.revokeObjectURL(videoUrl);
+                console.log(videoObj.videoWidth +','+ videoObj.videoHeight);
+                if(videoObj.videoWidth > 2560 || videoObj.videoHeight > 2560){
+                        showFileBigTip();
+                      }else{
+                        beginUploadFile(file);
+                      }
+              };
+              videoObj.onerror = function () {
+                    showFileErrorTip();
+              };
+              videoObj.src = videoUrl;
+              videoObj.load();
+          }else if(fileType == 2){
+            // 获取上传的图片的宽高
+              var reader = new FileReader();
+              reader.readAsDataURL(file);
+              reader.onload = function (evt) {
+                  var replaceSrc = evt.target.result;
+                  var imageObj = new Image();
+                  imageObj.src = replaceSrc;
+                   imageObj.onerror = function () {
+                    showFileErrorTip();
+                  };
+                  imageObj.onload = function () {
+                      console.log(imageObj.width +','+ imageObj.height);
+                      if(imageObj.width > 2560 || imageObj.height > 2560){
+                        showFileBigTip();
+                      }else{
+                        beginUploadFile(file);
+                      }
+                  };
+              };
+          }else{
+             beginUploadFile(file);
+          }
+          
+        }
+      }
+       function uploadFile() {
+        if (document.getElementById('fileToUpload').value == '') {
+          alert(getValue('file_choose_tip'));
+          return;
+        }
+        document.getElementById('submitBtn').disabled = 'true';
+        var fd = new FormData();
+        var file =  document.getElementById('fileToUpload').files[0];
+        fd.append("fileToUpload",file);
+        var xhr = new XMLHttpRequest();
+        xhr.upload.addEventListener("progress", uploadProgress, false);
+        xhr.addEventListener("load", uploadComplete, false);
+        xhr.addEventListener("error", uploadFailed, false);
+        xhr.addEventListener("abort", uploadCanceled, false);
+        xhr.open("POST", "UploadMinimal.aspx");
+        xhr.setRequestHeader('fileToUpload',encodeURIComponent(file.name));
+        xhr.send(fd);
+      }
+      function uploadProgress(evt) {
+        if (evt.lengthComputable) {
+          var percentComplete = Math.round(evt.loaded * 100 / evt.total);
+          document.getElementById('progressNumber').innerHTML = getValue('file_progress')+': ' + percentComplete.toString() + '%';
+        }
+        else {
+          document.getElementById('progressNumber').innerHTML = getValue('file_progress')+': ' +getValue('file_progress_error');
+        }
+      }
+      function uploadComplete(evt) {
+        alert(evt.target.responseText);
+        document.getElementById('submitBtn').disabled = '';
+      }
+      function uploadFailed(evt) {
+        alert(getValue('file_send_failed'));
+        document.getElementById('submitBtn').disabled = '';
+      }
+      function uploadCanceled(evt) {
+        alert(getValue('file_send_cancel'));
+        document.getElementById('submitBtn').disabled = '';
+      }
+
+      function chooseFile(){
+        document.getElementById("fileToUpload").click()
+      }
+    </script>
+</head>
+<body>
+<form id="form1" enctype="multipart/form-data" method="post" action="">
+    <div class="row">
+        <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelected();" style="display:none;" accept="image/gif,video/mp4" multiple/>
+        <input id="choose_file" type="button" value="" onclick="chooseFile();">
+    </div>
+    <div class="row" style="margin-top:5px;">
+      <label id="file_choose_tip">
+      </label>
+    </div>
+    <div class="row" style="margin-top:5px;">
+      <label id="errorType" style="color:#f00;">
+     </label>
+    </div>
+    <div id="fileName"></div>
+    <div id="fileSize"></div>
+    <div id="progressNumber"></div>
+    <div class="row" style="margin-top:5px;">
+        <input type="button" id="submitBtn" onclick="uploadFile()" value="" />
+    </div>
+</form>
+</body>
+</html>

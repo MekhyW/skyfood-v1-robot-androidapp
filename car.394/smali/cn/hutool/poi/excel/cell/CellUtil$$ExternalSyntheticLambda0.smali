@@ -1,0 +1,46 @@
+.class public final synthetic Lcn/hutool/poi/excel/cell/CellUtil$$ExternalSyntheticLambda0;
+.super Ljava/lang/Object;
+.source "D8$$SyntheticClass"
+
+# interfaces
+.implements Lcn/hutool/poi/excel/cell/CellSetter;
+
+
+# instance fields
+.field public final synthetic f$0:Lorg/apache/poi/ss/usermodel/Cell;
+
+.field public final synthetic f$1:Ljava/lang/Object;
+
+.field public final synthetic f$2:Lorg/apache/poi/ss/usermodel/CellStyle;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lorg/apache/poi/ss/usermodel/Cell;Ljava/lang/Object;Lorg/apache/poi/ss/usermodel/CellStyle;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcn/hutool/poi/excel/cell/CellUtil$$ExternalSyntheticLambda0;->f$0:Lorg/apache/poi/ss/usermodel/Cell;
+
+    iput-object p2, p0, Lcn/hutool/poi/excel/cell/CellUtil$$ExternalSyntheticLambda0;->f$1:Ljava/lang/Object;
+
+    iput-object p3, p0, Lcn/hutool/poi/excel/cell/CellUtil$$ExternalSyntheticLambda0;->f$2:Lorg/apache/poi/ss/usermodel/CellStyle;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final setValue(Lorg/apache/poi/ss/usermodel/Cell;)V
+    .locals 3
+
+    iget-object v0, p0, Lcn/hutool/poi/excel/cell/CellUtil$$ExternalSyntheticLambda0;->f$0:Lorg/apache/poi/ss/usermodel/Cell;
+
+    iget-object v1, p0, Lcn/hutool/poi/excel/cell/CellUtil$$ExternalSyntheticLambda0;->f$1:Ljava/lang/Object;
+
+    iget-object v2, p0, Lcn/hutool/poi/excel/cell/CellUtil$$ExternalSyntheticLambda0;->f$2:Lorg/apache/poi/ss/usermodel/CellStyle;
+
+    invoke-static {v0, v1, v2, p1}, Lcn/hutool/poi/excel/cell/CellUtil;->lambda$setCellValue$0(Lorg/apache/poi/ss/usermodel/Cell;Ljava/lang/Object;Lorg/apache/poi/ss/usermodel/CellStyle;Lorg/apache/poi/ss/usermodel/Cell;)V
+
+    return-void
+.end method
