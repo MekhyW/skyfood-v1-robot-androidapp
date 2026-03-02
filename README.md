@@ -162,18 +162,26 @@ This repository contains the output of decompiling the APK with [apktool](https:
 To recompile the APK from the `car.394/` directory:
 
 ```bash
-apktool b car.394 -o car_skyfood_rebuilt.apk
+apktool b car.394 -o car_skyfood.apk
 ```
 
 To sign the resulting APK with the included keystore:
 
 ```bash
-jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 \
-  -keystore mykey.keystore car_skyfood_rebuilt.apk <alias>
+apksigner sign --ks mykey.keystore car_skyfood.apk # password is android
 ```
 
-> ⚠️ You will need the keystore password and alias to sign. Keep `mykey.keystore` secure and do not commit keystore credentials to version control.
 
+## Install via ADB
+
+On the Android device:
+System Settings -> Developer Options -> Enable Wireless Debugging
+
+```bash
+adb pair <pairing_code> # if not already paired
+adb connect <robot_ip>
+adb -s <robot_ip> install -r car_skyfood.apk
+```
 
 
 ## Notes
