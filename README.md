@@ -178,11 +178,13 @@ On the Android device:
 System Settings -> Developer Options -> Enable Wireless Debugging
 
 ```bash
-adb pair <pairing_code> # if not already paired
-adb connect <robot_ip>
-adb -s <robot_ip> install -r car_skyfood.apk
+adb pair <pair_ip:pair_port> <pairing_code> # if not already paired
+adb connect <tablet_ip:tablet_port>
+adb -s <tablet_ip:tablet_port> install -r car_skyfood.apk
+adb -s <tablet_ip:tablet_port> shell pm set-home-activity com.autoxing.delivery.skyfood/.MainActivity
 ```
 
+If Android settings app closes: 10x click on "System info" on the skyfood app.
 
 ## Notes
 
